@@ -222,3 +222,74 @@ textarea {
 .social-link a{
     margin-right: 25px;
 }
+.hide{
+    display: none;
+}
+/* Responsive styles */
+
+/* For mobile devices */
+@media screen and (max-width: 576px) {
+    .skill-container, .resume-container, .about-info-container, .banner, nav{
+        flex-direction: column;
+    }
+    #what-i-do-description {
+        padding: 15px;
+    }
+    footer{
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .footer-column {
+    width: 100%;    
+    }
+
+    .contact input[type="text"],.contact input[type="email"],
+    textarea { 
+    width: 70%;
+    }
+    .about,.banner {
+        padding: 20px;
+    }
+    .header{
+        background-image: none;
+    }
+    .banner .profile-pic{
+        width: 100%;
+    }
+    nav > ul{
+       /* padding-left: 10px; */
+       gap: 10px;
+       padding-inline-start: 10px;
+    }
+
+    nav li {
+    margin-right: 0px;
+    padding: 10px;
+    padding-inline-start: 10px;
+}
+    .btn-primary {
+        margin-bottom: 30px;
+}
+    
+}
+
+/* for medium device */
+@media screen and (min-width: 577px) and (max-width: 960px) {
+    .skill-container, .resume-container {
+        flex-direction: column;
+    }
+     footer{
+        padding: 30px;
+    }
+    .contact input[type="text"],.contact input[type="email"],
+    textarea {
+    
+    width: 70%;
+
+    }
+    .btn-primary {
+        margin-bottom: 30px;
+}
+    
+}
